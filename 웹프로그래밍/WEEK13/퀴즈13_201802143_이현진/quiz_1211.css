@@ -1,0 +1,164 @@
+*{
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+#header {
+  border:10px outset blue;
+  text-align: center;
+  background-color: skyblue;
+  color:white;
+  padding : 20px;
+}
+#poster {
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+	/* body {
+    background: red;
+  } */
+
+  #poster {
+    float: right;
+  }
+  #paris {
+    margin: 0 auto;
+    border: 5px solid blue;
+    width: 75%;
+    float: left;
+    height: 512px;
+  }
+  #event {
+    margin: 0 auto;
+    border: 5px solid pink;
+    width: 25%;
+    float: right;
+    height: 512px;
+  }
+  #introduce {
+    margin: 0 auto;
+    border: 5px solid violet;
+    width: 50%;
+    float: left;
+    height: 840px;
+  }
+  #information {
+    width: 50%;
+    margin: 0 auto;
+    border: 5px solid mediumseagreen;
+    float: right;
+    height: 420px;
+  }
+  #price {
+    width: 50%;
+    margin: 0 auto;
+   float: right;
+    border: 5px solid tomato;
+    height: 420px;
+  }
+
+  
+}
+@media (min-width:768px) and (max-width:992px) {
+	/* body {
+		background: gold;
+  } */
+
+  #poster {
+    float: right;
+  }
+  
+  #paris {
+    margin: 0 auto;
+    border: 5px solid blue;
+  }
+  #event {
+    margin: 0 auto;
+    border: 5px solid pink;
+  }
+  #introduce {
+    margin: 0 auto;
+    border: 5px solid violet;
+  }
+  #information {
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+    border: 5px solid mediumseagreen;
+    height: 700px;
+  }
+  #price {
+    width: 50%;
+    margin: 0 auto;
+   float: right;
+    border: 5px solid tomato;
+    height: 700px;
+  }
+
+  #paris p  {
+    text-indent: 15px;
+  }
+
+  #noparis:hover {
+    background-color: lightgrey;
+    color: green;
+  }
+}
+
+
+
+#number1 {
+  border: 2px solid red;
+  width: 500px;
+  position: relative;
+  height: 600px;
+}
+
+#number2 {
+  border: 2px solid orange;
+  width: 300px;
+  height: 200px;
+  margin-top: 200px;
+  margin-left: 30px;
+  position: relative;
+}
+
+#number3 {
+  border: 2px solid blue;
+  width: 300px;
+  height: 200px;
+  position:absolute;
+  margin-left: 60px;
+}
+
+#introduce div strong:first-child{
+ color: orange;
+}
+#introduce div strong:nth-child(2){
+  color: blue;
+ }
+ /* #introduce div strong:nth-child(){
+  color: blue;
+ } */
+
+ #introduce #number3 strong {
+   color: blue;
+ }
+
+ dl dt em {
+   color: blue;
+ }
+
+ .table .row1{
+    background-color: #ff9900;
+ }
+ .table .row2{
+  background-color: #cc99ff;
+}
+.table .row3{
+  background-color: #ccffcc;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이현진</title>
+    <meta name="keywords" content="이현진, 축구, 사랑">
+    <meta name="description" content= "이현진의 일상에 대한 사이트입니다.^^">
+    <meta name="author" content="LEEHYUNJIN">
+    <link rel="stylesheet"   href="./style.css"> 
+</head>
+<body>
+    <h1>이현진 소개 페이지</h1>
+
+    <h2>일상속에서의 나</h2>
+    <div class="introduce">
+        <h3>이현진 소개</h3>
+        <p>저는 22살 <b>이현진</b> 이라고 합니다. 작년 2월에 군대 갔다가 2020년도 8월부로 전역해서 
+            학교를 다니고 있습니다. 먹는 걸 좋아해서 맨날 과식을 하곤 합니다. 취미는 영화감상과
+            축구이며 요즘은 축구를 자주 못해서 집에서 넷플릭스로 영화를 보곤합니다.
+        </p>
+        
+        <h3>가족소개</h3>
+        <p> 저의 가족은 3명입니다. 저는 <i>외동</i>입니다. 엄마는 주부이시고 아버지는 매일
+        출근하는 회사원이십니다. 외동이라 사랑을 많이 받고 자란것 같습니다. 
+        저는 가족을 사랑합니다.</p>
+    </div>
+
+
+    <h2>여행 계획</h2>
+        <table>
+            
+            <tr>
+                
+                <th rowspan="2">장소</th>
+                <th colspan="4">여행 수첩</th>
+            </tr>
+            <tr>
+                <th colspan="2" style="text-align:center">여행일정</th>
+                
+                <th colspan="1" style="text-align:center">참고사이트</th>
+                <th colspan="1" style="text-align:center">여행지그림</th>
+                
+            </tr>
+            <tr>
+                <td rowspan="3">제주도</td>
+                <td>첫째 날</td>
+                <td>
+                    <ol>
+                        <li>
+                            장보기
+                            <ul>
+                                <li>이마트가기</li>
+                                <li>옷가게가기</li>
+                            </ul>
+                        
+                        </li>
+                        <li>놀기</li>
+                       
+
+                    </ol>
+                </td>
+                <td>
+                    <a href="https://www.emart.com/" target="_blank">이마트</a>
+                    <br>
+                    <a href="http://www.ssg.com/main.ssg?ckwhere=ssg_ggbr&EKAMS=yahoo.723.2984.659.1428985228289.18784998&trackingDays=1&gclid=CjwKCAjwnef6BRAgEiwAgv8mQUnVTC9V84HC0M13yxGtfEu3BiXkzU9zg_Z4ecYudUKfP1bK7VCgIRoCDeYQAvD_BwE" target="_blank">배송</a>        
+                    
+                </td>
+                <td>
+                    <img id="emart" src="./images/85113_109473_5923.jpg" alt="이마트에요~">
+                </td>
+            </tr>
+            <tr>
+                <td>둘째 날</td>
+                <td>성산일출봉가기</td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>셋쨰 날</td>
+                <td>아이스크림먹기</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+    <h2>자주 찾는 사이트</h2>
+    <iframe src="https://www.emart.com/" ></iframe>
+
+
+    <h1>정보 입력</h1>
+        <fieldset>
+            <legend>정보입력</legend>
+        
+        <form action="/action_page.php" method="POST">
+            <label for="name">이름:</label>
+            <input id="name" name="name" type="text">
+            <br>
+            <label for="major">전공:</label>
+            <select name="major" id="major">
+                <option value="컴퓨터공학">컴퓨터공학</option>
+                <option value="건축학과">건축학과</option>
+                <option value="전자과">전자과</option>
+            </select>
+            <br>
+            <span>취미:</span>
+            <input id="hobby1" name="hobby" value="수영" type="checkbox">
+            <label for="hobby1">수영</label>
+            <input id="hobby2" name="hobby" value="골프" type="checkbox">
+            <label for="hobby2">골프</label>
+            <input id="hobby3" name="hobby" value="축구" type="checkbox">
+            <label for="hobby3">축구</label>
+            <br>
+
+            <textarea name="introduce" id="introduce" cols="25" rows="10"></textarea>
+            <br>
+            <input type="submit" value="제출">
+            </form>
+        </fieldset>
+</body>
+</html>

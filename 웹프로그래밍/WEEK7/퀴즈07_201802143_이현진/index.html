@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>로그인 및 회원 가입하기</h1>
+    <form action="login_process.php">
+        <label for="id">아이디 :</label>
+        <input id="id" name="id"  type="text" pattern="^([A-Za-z0-9]){6,15}">
+        <br>
+        <label for="password">비밀번호 :</label>
+        <input id="password" name="password" type="password" required pattern="^.*(?=^.{8,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*">
+        <br>
+        <input type="submit" value="로그인" formmethod="POST" formaction="login_process.php">
+        <input type="submit" formaction="member.php" formmethod="POST" value="회원가입">
+        <input type="reset" value="초기화">
+    </form>
+</body>
+</html>

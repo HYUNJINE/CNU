@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="startWorker()" id="timerStart">Start</button>
+    <span>Timer:</span>
+    <!-- <div id="result"></div> -->
+    <span id="result"></span>
+    <br>
+    <span>이미지 파일선택</span>
+    <input type="file" multiple  onchange="enrollImage(event)" id="fileSelect">
+    <div id="image_container"></div>
+    <button disabled id="imageAdd" onclick="setImage()">이미지 추가</button>
+    <div>A바구니</div>
+    <div  id="baguni1" class="baguni" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div>B바구니</div>
+    <div  id="baguni2" class="baguni" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    
+
+    <script src="worker.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

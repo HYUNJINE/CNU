@@ -1,0 +1,38 @@
+*{background-image: url(../images/images.jpg)}
+.introduce {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width:800px;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+   
+}
+
+th,td {
+    
+    border: 5px groove #ddd;
+    padding: 20px;
+}
+th {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+#emart {
+    width: 160px;
+    height: 100px;
+
+}
+iframe {
+    width: 500px;
+    height: 500px;
+    /* frameborder: "0"; */
+}
+.information {
+    border: 3px solid black;
+}
