@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="shopping_cart" id="open_modal">
+        <i class="material-icons">shopping_cart</i>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal_content">
+            <h1>상품 장바구니 등록</h1>
+            <form name="enroll">
+                <div class="image">
+                    <label for="enroll_image">상품 이미지:</label>   
+                    <input type="file" id="enroll_image" name="enroll_image" accept=".png, .jpeg, .jpg">
+                </div>
+                <div>
+                    <label for="enroll_name">상품 이름:</label>
+                    <input type="text" id="enroll_name" name="enroll_name">
+                </div>
+                <div>
+                    <label for="enroll_price">상품 가격:</label>  
+                    <input type="text" name="enroll_price" id="enroll_price" size="10">
+                </div>
+                <div>
+                    <label for="enroll_count">상품개수</label>
+                    <input type="text" name="enroll_count" id="enroll_count" size="5">
+                    <span>최대 50개 이하까지 선택 가능</span>
+                </div>
+                <div>
+                    <span>배송 방법:</span>
+                    <input type="radio" name="delibery" id="normal_delivery" value="일반배송">
+                    <label for="normal_delivery">일반배송</label>
+                    <input type="radio" name="delibery" id="dawn_delivery" value="새벽배송">
+                    <label for="dawn_delivery">새벽배송</label>
+                     
+                </div>
+                
+            </form>
+
+            <button id="in_shopping_cart" onclick="validator()">장바구니 담기</button>
+            <button id  ="modal_close_btn">취소</button>
+    
+        </div>
+    </div>
+    
+    <div>
+        <span>일반배송:</span>
+        <input type="checkbox" value="전체 선택" name="select_all1" id=select_all1>
+        <label for="select_all1">전체 선택</label>
+        <button id="select_delete1">선택 삭제</button>
+        <button id="move_to_dawn" onclick="move_to_dawn_delivery()">새벽 배송으로 이동</button>
+        <table id="normal_table">
+            <thead>
+                <tr>
+                    <th>선택</th>
+                    <th>상품 이미지</th>
+                    <th>상품 이름</th>
+                    <th>상품 개별 가격</th>
+                    <th>상품 개수</th>
+                    <th>상품 구매 가격</th>
+                </tr>
+            </thead>
+            <tbody id="tbody_normal"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">총 가격</td>
+                    <td colspan="1" id="all_price1">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+
+    <div>
+        <span>새벽배송:</span>
+        <input type="checkbox" value="전체 선택" name="select_all2" id=select_all2>
+        <label for="select_all2">전체 선택</label>
+        <button id="select_delete2">선택 삭제</button>
+        <button id="move_to_normal" onclick="move_to_normal_delivery()">일반 배송으로 이동</button>
+        <table id="dawn_table">
+            <thead>
+                <tr>
+                    <th>선택</th>
+                    <th>상품 이미지</th>
+                    <th>상품 이름</th>
+                    <th>상품 개별 가격</th>
+                    <th>상품 개수</th>
+                    <th>상품 구매 가격</th>
+                </tr>
+            </thead>
+            <tbody id="tbody_dawn"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">총 가격</td>
+                    <td colspan="1" id="all_price2">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div>
+        <label for="product_name">상품 이름:</label>
+        <input type="text" id="product_name">
+        <br>
+        <label for="price_range1">가격 범위:</label>
+        <input type="text" id="price_range1" name="price_range1">
+        <span>~</span>
+        <input type="text" id="price_range2" name="price_range2">
+        <br>
+        <button id="search">검색</button>
+        <button id="change_before">원래 색으로 바꾸기</button>
+    </div>
+        
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
