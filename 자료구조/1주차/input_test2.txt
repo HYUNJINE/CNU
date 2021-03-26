@@ -1,0 +1,11 @@
+10
+진수 49 true
+진혁 40 false
+영우 39 false
+상혁 49 false
+동준 39 true
+준규 52 false
+구환 40 false
+민규 49 false
+준희 56 false
+경환 30 false
